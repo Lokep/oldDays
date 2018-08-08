@@ -1,0 +1,72 @@
+.leftBar{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 30%;
+	height: 100%;
+	background-color: #f4f4f4;
+
+}
+.headPic{
+	width: 80px;
+	height: 80px;
+	background-color: #c2c2c2;
+	border-radius: 40px;
+	margin: 40px auto;
+	overflow: hidden;
+	border:1px solid silver;
+}
+.headPic>img{
+	width: 80px;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.headName{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 30px; 
+}
+
+.headIntro,.headAuthor{
+	font-size: 16px;
+	line-height: 2.5;
+	color: gray;
+	padding: 0 20px;
+	text-indent: 2em;
+}
+.headAuthor{
+	text-align: right;
+}
+
+.rightBar{
+	width: 70%;
+	float: right;
+}
+.rightTitle{
+	margin:70px 0 20px 0;
+	font-size: 25px;
+	text-align: center;
+}
+.rightContent{
+	font-size: 17px;
+	line-height: 2.5;
+	text-align: center;
+	margin:20px 0 ;
+	padding:0 60px;
+}
+.rightContent>span,.rightPic,.headIntro,.headAuthor,.headName,.headPic,.rightTitle{
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
+	opacity: 0;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
+}
+.rightPic{
+	max-width: 80%;
+	height: 500px;
+	margin: 25px auto;
+	-webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	border-radius: 4px;
+}
